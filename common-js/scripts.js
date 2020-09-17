@@ -14,6 +14,9 @@
 	// ACCORDIAN
 	panelAccordian();
 
+	// Enable tooltip
+	$('[data-toggle="tooltip"]').tooltip()
+
 	$(window).on('load', function(){
 		
 		// ISOTOPE PORTFOLIO WITH FILTER
