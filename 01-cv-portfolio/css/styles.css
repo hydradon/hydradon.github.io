@@ -80,10 +80,13 @@ button{ outline: 0; border: 0; background: none; cursor: pointer; }
 b.max-bold{ font-weight: 700; }
 
 
-
 /* ---------------------------------
 2. COMMONS FOR PAGE DESIGN
 --------------------------------- */
+
+.navbar-collapse .nav > li {
+    display: inline-block;
+}
 
 .section{ padding: 100px 0 50px; }
 
