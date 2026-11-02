@@ -72,7 +72,6 @@
 		<symbol id="i-doc" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 3H6a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8l-5-5Zm0 0v5h5M9 13h6m-6 4h6"/></symbol>
 		<symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 4h6v6m0-6-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></symbol>
 		<symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5m8-10 5 5-5 5M14 4l-4 16"/></symbol>
-		<symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2.5 2.9 6 6.6.9-4.8 4.6 1.2 6.5L12 17.4l-5.9 3.1 1.2-6.5L2.5 9.4l6.6-.9z"/></symbol>
 		<symbol id="i-cap" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M2 9l10-5 10 5-10 5L2 9Zm4 2v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5m4-2v6"/></symbol>
 		<symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></symbol>
 		<symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
@@ -426,8 +425,28 @@
 					<p class="eyebrow mono">05</p>
 					<h2 id="github-title">Open source on GitHub</h2>
 				</header>
-				<div class="repo-grid" id="repo-grid">
-					<p class="repo-fallback">My public repositories are listed on my GitHub profile.</p>
+				<p class="repo-intro">My public repositories are listed on my GitHub profile.</p>
+				<div class="repo-grid">
+					<a class="card repo" href="https://github.com/hydradon/namespaceclasscontroller" target="_blank" rel="noopener">
+						<span class="repo-name"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>namespaceclasscontroller</span>
+						<p class="repo-desc">A Kubernetes controller that adds a set of objects to every namespace of a &quot;class&quot;, defined by a NamespaceClass custom resource.</p>
+						<div class="repo-meta"><span><i class="lang-dot lang-go"></i>Go</span></div>
+					</a>
+					<a class="card repo" href="https://github.com/hydradon/uk-universities-course-crawlers" target="_blank" rel="noopener">
+						<span class="repo-name"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>uk-universities-course-crawlers</span>
+						<p class="repo-desc">Scrapy web crawlers that collect course data from eight UK universities, including UCL, Edinburgh and Bristol.</p>
+						<div class="repo-meta"><span><i class="lang-dot lang-python"></i>Python</span></div>
+					</a>
+					<a class="card repo" href="https://github.com/hydradon/startup-idea-generator" target="_blank" rel="noopener">
+						<span class="repo-name"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>startup-idea-generator</span>
+						<p class="repo-desc">A Streamlit app that generates startup ideas for a given industry, using the Cohere API.</p>
+						<div class="repo-meta"><span><i class="lang-dot lang-python"></i>Python</span></div>
+					</a>
+					<a class="card repo" href="https://github.com/hydradon/LogService" target="_blank" rel="noopener">
+						<span class="repo-name"><svg class="icon" aria-hidden="true"><use href="#i-code"/></svg>LogService</span>
+						<p class="repo-desc">A Spring microservice that reads a log file and returns the last N lines that contain a search text.</p>
+						<div class="repo-meta"><span><i class="lang-dot lang-java"></i>Java</span></div>
+					</a>
 				</div>
 				<p class="repo-more"><a class="btn btn-ghost" href="https://github.com/hydradon?tab=repositories" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#i-github"/></svg> All repositories on GitHub</a></p>
 			</div>

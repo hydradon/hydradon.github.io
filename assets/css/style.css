@@ -551,9 +551,10 @@ span + .edu-loc { margin-left: 16px; }
 .repo-grid {
 	display: grid;
 	gap: 18px;
-	grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+	grid-template-columns: 1fr;
 }
-.repo-fallback { color: var(--text-2); }
+@media (min-width: 768px) { .repo-grid { grid-template-columns: 1fr 1fr; } }
+.repo-intro { margin: 0 0 24px; color: var(--text-2); }
 .repo {
 	display: flex;
 	flex-direction: column;
@@ -577,7 +578,10 @@ span + .edu-loc { margin-left: 16px; }
 .repo-desc { flex: 1; margin: 0; font-size: 14.5px; color: var(--text-2); }
 .repo-meta { display: flex; gap: 16px; font-size: 13px; color: var(--muted); }
 .repo-meta span { display: inline-flex; align-items: center; gap: 6px; }
-.lang-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--blue); }
+.lang-dot { width: 10px; height: 10px; border-radius: 50%; flex: none; background: var(--blue); }
+.lang-go { background: #00ADD8; }
+.lang-python { background: #3572A5; }
+.lang-java { background: #b07219; }
 .repo-more { margin: 28px 0 0; }
 
 /* Footer */
