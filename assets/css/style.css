@@ -352,7 +352,6 @@ strong { color: var(--text); font-weight: 600; }
 	border-radius: 3px;
 	background: linear-gradient(90deg, var(--accent), var(--blue));
 }
-.sub-title { font-size: 1.15rem; font-weight: 600; margin-bottom: 16px; }
 
 .card {
 	background: var(--surface);
@@ -410,26 +409,6 @@ strong { color: var(--text); font-weight: 600; }
 	background: var(--accent-soft);
 	border-color: transparent;
 }
-
-.certs { margin-top: 56px; }
-.cert-list {
-	list-style: none;
-	display: grid;
-	gap: 14px;
-	grid-template-columns: 1fr;
-}
-@media (min-width: 640px) { .cert-list { grid-template-columns: repeat(2, 1fr); gap: 10px 14px; } }
-@media (min-width: 1000px) { .cert-list { grid-template-columns: repeat(3, 1fr); } }
-.cert {
-	display: flex;
-	gap: 12px;
-	align-items: flex-start;
-	padding: 12px 16px;
-	box-shadow: none;
-}
-.cert .icon { width: 22px; height: 22px; color: var(--accent); margin-top: 2px; }
-.cert strong { display: block; font-size: 14.5px; line-height: 1.4; }
-.cert small { display: block; margin-top: 4px; color: var(--muted); font-size: 13px; }
 
 /* Timeline */
 .timeline {
@@ -540,18 +519,17 @@ strong { color: var(--text); font-weight: 600; }
 @media (min-width: 900px) { .edu-minor { grid-column: 1 / -1; } }
 
 /* Projects */
-.project-grid { display: grid; gap: 24px; }
-@media (min-width: 900px) { .project-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (min-width: 1100px) { .project-grid { grid-template-columns: repeat(3, 1fr); } }
+.project-list { display: grid; gap: 24px; }
 .project {
-	display: flex;
-	flex-direction: column;
+	display: grid;
+	gap: 20px;
 	padding: 24px;
 	transition: border-color .2s, transform .2s;
 }
 .project:hover { border-color: rgba(52, 211, 153, 0.35); transform: translateY(-3px); }
 .project h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 12px; }
-.project > p { color: var(--text-2); font-size: 15px; }
+.project-main > p { color: var(--text-2); font-size: 15px; }
+.project-main > p:last-child { margin-bottom: 0; }
 .citation {
 	padding: 12px 14px;
 	font-size: 13.5px !important;
@@ -560,8 +538,12 @@ strong { color: var(--text); font-weight: 600; }
 	background: var(--blue-soft);
 	border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
-.project .chips { margin: 4px 0 20px; }
-.project-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: auto; }
+.project-side { display: flex; flex-direction: column; gap: 20px; }
+.project-links { display: flex; flex-wrap: wrap; gap: 10px; }
+@media (min-width: 860px) {
+	.project { grid-template-columns: minmax(0, 7fr) minmax(0, 3fr); gap: 36px; padding: 28px 32px; }
+	.project-side { padding-left: 32px; border-left: 1px solid var(--border-soft); }
+}
 
 /* GitHub repos */
 .repo-grid {
