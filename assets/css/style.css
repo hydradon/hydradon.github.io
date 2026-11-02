@@ -533,7 +533,7 @@ strong { color: var(--text); font-weight: 600; }
 .citation {
 	padding: 12px 14px;
 	font-size: 13.5px !important;
-	font-style: italic;
+	font-style: normal;
 	border-left: 2px solid var(--blue);
 	background: var(--blue-soft);
 	border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
