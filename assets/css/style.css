@@ -516,8 +516,8 @@ strong { color: var(--text); font-weight: 600; }
 .edu-minor { display: flex; align-items: center; gap: 18px; padding: 20px 26px; }
 .edu-minor .edu-icon { margin-bottom: 0; flex-shrink: 0; }
 .edu-minor .meta-line { margin-bottom: 0; }
+.edu .meta-line { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; line-height: 1.4; }
 .edu-loc { display: inline-flex; align-items: center; gap: 5px; }
-span + .edu-loc { margin-left: 16px; }
 @media (min-width: 900px) { .edu-minor { grid-column: 1 / -1; } }
 
 /* Projects */
